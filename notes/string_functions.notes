@@ -1,0 +1,10 @@
+!some random notes!
+- select replace(initial string, replaced bit, bit to replace with
+) from table;
+- source sql_file.sql
+    - to run files within command line
+- select reverse(string) from table;
+- select char_lengt(string) from table
+- concat(list, of, strings, to, concat)
+- select upper(string)
+- select lower(string)
