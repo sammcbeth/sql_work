@@ -1,0 +1,6 @@
+!aggregate functions!
+- group by column
+    - aggregates rows based on specified column(s)
+    - tends to make the data output less useful
+    - but can make the count of "super" rows more useful
+- t

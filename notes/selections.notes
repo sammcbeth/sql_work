@@ -1,0 +1,9 @@
+!various selection configurations!
+- select distinct value from table;
+- select distinct value, value from table;
+    - will look for distinct on combination of both columns
+- select value from table order by some_value desc/asc
+- select value from table limit number;
+- select value from table limit start, stop;
+- select value from table where value like '';
+- select value from table where value like '%\%';
