@@ -1,0 +1,22 @@
+!data Types!
+- varchar : variable length
+- char: length is fixed at declaration
+- length of char = number of bytes per entry
+- decimal(m, d): m is the maximum digits d is the number to the right of the decimal.
+- float and doubles
+    - approximate values?
+    - store larger numbers in less space
+    - lose some precision
+    - reliability issues past seven digits
+- date
+- time
+- datetime
+- curdate() gives current date
+- curtime() gives current time
+- now() gives the current date time
+- DAY() of a date gives number
+- DAYNAME() gives monday, tuesday...
+- DAYOFWEEK() gives 1-7
+- DAYOFYEAR()
+- Lookup date format specifiers for regex like expressions to work with dates
+- 
