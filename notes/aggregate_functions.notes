@@ -3,4 +3,6 @@
     - aggregates rows based on specified column(s)
     - tends to make the data output less useful
     - but can make the count of "super" rows more useful
-- t
+- min(column) works as expected
+- max(column) works as expected
+- sum(column) works as expected
