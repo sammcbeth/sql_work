@@ -19,4 +19,6 @@
 - DAYOFWEEK() gives 1-7
 - DAYOFYEAR()
 - Lookup date format specifiers for regex like expressions to work with dates
+- timestamp default now()
+- on update current_timestamp
 - 
