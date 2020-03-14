@@ -1,0 +1,17 @@
+!Logical Operators!
+- not equal
+    - != or <>
+- not like
+    - not like
+- > < >= <=
+    - work as expected
+- in(strings or nums)
+- || = or
+- && = and
+- between this and that
+- select columns
+case 
+    when 
+    else 
+    end as name
+    from table
