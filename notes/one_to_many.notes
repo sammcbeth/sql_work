@@ -1,0 +1,17 @@
+!one to many, foreign keys, joins!
+- foreign key(column) references table(column)
+!Inner Joins!
+- if only join is specified it will automatically be an inner join
+- inner join joins on specified column and only grabs the rows which have values for both tables.
+- explicit vs implicit is differeniated by explicityl declaring the join vs implying it and letting sql figure it out.
+    - either works when used properly but explicit is more clear and easily manipulated.
+- implicit inner join
+    -select * from table1, table2 where table1.id = table2.customer_id;
+- explicit inner join
+    - select * from table1 join table2  on table1.id = table2.customer_id;
+!Outer Joins!
+- Left Join:
+    - takes every row from the left table or first table and joins the rows it can but leaves the ones it cant = Null but still displays them
+- Right Join:
+    - Works the same as a left join but from the right side or the second table.
+- !there is no difference between left and right join if you just switch the order of table 1 and 2

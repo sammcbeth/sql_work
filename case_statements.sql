@@ -30,19 +30,33 @@
 --     end as 'Type'
 -- from
 --     books;
+-- select
+--     title,
+--     author_lname,
+--     author_fname,
+--     case
+--         when count(*) = 1 then '1 Book'
+--         when count(*) = 2 then '2 Books'
+--         else '3 Books'
+--     end as 'Count'
+-- from
+--     books
+-- group by
+--     author_lname,
+--     author_fname
+-- limit
+--     10;
 select
-    title,
-    author_lname,
-    author_fname,
+    first_name,
+    ifnull(avg(grade), 0),
     case
-        when count(*) = 1 then '1 Book'
-        when count(*) = 2 then '2 Books'
-        else '3 Books'
-    end as 'Count'
+        when avg(grade) >= 70 then 'Passing'
+        else 'Failing'
+    end as 'passing_status'
 from
-    books
+    students
+    left join papers on students.id = papers.student_id
 group by
-    author_lname,
-    author_fname
-limit
-    10;
+    students.id
+order by
+    avg(grade) desc;
